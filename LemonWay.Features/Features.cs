@@ -18,7 +18,7 @@ namespace LemonWay
         {
             if (n < 1 || n > 100)
                 return -1; //throw new ArgumentException("invalid parameter (must be between 1 and 100)", "n");
-            Debug.Assert(n < 46, "A partir du 47ième élément la valeur à retourner (2 971 215 073) ne rentre plus dans un int !" + Environment.NewLine +
+            Debug.Assert(n < 47, "A partir du 47ième élément la valeur à retourner (2 971 215 073) ne rentre plus dans un int !" + Environment.NewLine +
                                  "L'énoncé est il mauvais ou est-ce volontaire?");
             decimal acc1 = 1;
             decimal acc2 = 0;

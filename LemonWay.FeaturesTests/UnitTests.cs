@@ -10,12 +10,16 @@ namespace LemonWay.FeaturesTests2
         public void FibonacciTest1()
         {
             Assert.Equals(Features.Fibonacci(1), 1);
+            Assert.Equals(Features.Fibonacci(4), 5);
+            Assert.Equals(Features.Fibonacci(46), 1836311903);
         }
 
         [TestMethod]
-        public void FibonacciTest2()
+        public void FibonacciTestThatFails()
         {
-            Assert.Equals(Features.Fibonacci(4), 5);
+            // Va echouer. Quel resultat attendu ? 
+            // ==> on Change la spec : N moins grand et/ou On change le type de retour (long ou decimal)
+            Assert.Equals(Features.Fibonacci(47), 2971215073);
         }
 
         [TestMethod]
